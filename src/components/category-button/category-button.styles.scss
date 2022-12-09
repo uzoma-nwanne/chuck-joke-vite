@@ -1,0 +1,14 @@
+.category-div{
+    font-size: 16px;
+    font-family: Montserrat Regular;
+    width:100px;
+    text-transform: capitalize;
+    text-align: center;
+    padding: 5px;
+    @media screen and (max-width:900px){
+        width: 25vw;
+    }
+}
+.category-div:hover{
+    transform: scale(1.2);
+}

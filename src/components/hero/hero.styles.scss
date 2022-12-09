@@ -1,0 +1,68 @@
+.hero-area {
+  background-image: url(../../assets/01/bitmap@3x.png);
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .hero-text {
+    h4 {
+      font-family: Montserrat Regular;
+      font-size: 48px;
+      line-height: 72px;
+      color: var(--light-brown);
+      text-align: center;
+      margin-top: -40px;
+    }
+    p {
+      color: var(--white);
+      font-size: 30px;
+      margin-top: -60px;
+    }
+  }
+  form {
+    display: flex;
+
+    input {
+      background: transparent;
+      width: 350px;
+      border: 2px solid var(--white);
+      border-radius: 5px;
+      padding: 10px;
+      background-repeat: no-repeat;
+      background-position: right;
+      font-size: 16px;
+      color: var(--white);
+    }
+    .search {
+      background: transparent;
+      background-image: url("../../assets/01/search-copy.png");
+      width: 50px;
+      height: 50px;
+      background-repeat: no-repeat;
+      background-position: right;
+      margin-left: -60px;
+      border: none;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .hero-area {
+    max-width: 900px;
+    background-image: url(../../assets/01/bitmap.png);
+    height: 40vh;
+    p {
+      text-align: center;
+    }
+    form {
+      input {
+        width: 300px;
+      }
+    }
+  }
+}

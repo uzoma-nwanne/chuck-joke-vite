@@ -1,0 +1,40 @@
+.joke-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--off-white);
+    .joke-icon__container{
+        display: flex;
+        justify-content: space-between;
+        width: 100px;
+        .upVote, .downVote{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: var(--dark-green);
+            font-size: 14px;
+            .upVoteIcon, .downVoteIcon{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: var(--dark-green);
+                border-radius: 50%;
+                height: 35px;
+                width:35px;     
+            }
+        }  
+        .downVote{
+            color: var(--yellow);
+            .downVoteIcon{
+                background-color: var(--yellow);  
+            }
+        } 
+    }
+  
+    .joke-footer__button{
+        display: flex;
+        justify-content: space-between;
+    }
+}
