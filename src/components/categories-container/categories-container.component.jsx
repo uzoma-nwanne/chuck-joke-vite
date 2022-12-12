@@ -24,14 +24,14 @@ const CategoriesContainer = ({ categories, allJokes }) => {
     "green",
   ];
   const total = Object.entries(categories).length;
-  
+
   return (
     <div className="categories-container">
-      {Object.entries(categories).map(([key,value],index = 0) => {
+      {Object.entries(categories).map(([key, value], index = 0) => {
         let no = 0;
         if (index !== 0) {
           no = total % index;
-        } 
+        }
         const myColor = color[no];
         return (
           <CategoryButton
@@ -42,8 +42,13 @@ const CategoriesContainer = ({ categories, allJokes }) => {
           />
         );
         index++;
-      })} 
-      <CategoryButton category={'Unclassified'} color={"f2f2f2"} key={'f2f2'}  onClick={handleClick}/>
+      })}
+      <CategoryButton
+        category={"Unclassified"}
+        color={"f2f2f2"}
+        key={"f2f2"}
+        onClick={handleClick}
+      />
     </div>
   );
 };

@@ -25,8 +25,6 @@ a {
   box-sizing: border-box;
 }
 
-@import url("https://fonts.cdnfonts.com/css/montserrat");
-
 :root {
   --grey-black: #0a0a0b;
   --white: #ffffff;
