@@ -5,6 +5,7 @@
     padding: 20px;
     color: var(--gray-black);
     margin-top:-20px;
+    
     .joke-container, .trending{
         background-color: var(--white);
         border-radius:5px;
@@ -42,6 +43,7 @@
     }
     .trending{
         width: 30vw;
+        margin-top: -20px;;
         ul{
             li{
                 margin-bottom: 5px;
